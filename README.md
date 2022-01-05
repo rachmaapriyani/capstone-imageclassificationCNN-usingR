@@ -21,7 +21,15 @@ A CNN is a class of deep learning neural networks that uses a series of filters 
 
 In this case, we will build image classification for helping a stock photo website categorizing their image database based on the thematic location. Why is this an important task? You can check how the unsplash, a photo stock website that use deep learning to organize and create tag for each image in their collection, is a challenge for us who wish to learn more about solving problems with unstructured data from a collection of images. The data consists of images with 3 different labels: “Beach”, “Forest”, or “Mountain”. Data were collected by scraping images directly from Google image search.
 
+## Results
+
+### Accuracy before Improvement
+![Accuracy Before](https://github.com/rachmaapriyani/capstone-imageclassificationCNN-usingR/blob/main/before_improvement.PNG)
+### Accuracy After Improvement
+![Accuracy After](https://github.com/rachmaapriyani/capstone-imageclassificationCNN-usingR/blob/main/after_improvement.PNG)
+### Leaderboard Score
+![LeaderBoard](https://github.com/rachmaapriyani/capstone-imageclassificationCNN-usingR/blob/main/score.PNG)
 
 ## Conclusion
 
-All image data for the data test is located inside the data/train folder. Through this dataset, we are expected to solve an image classification problem by building a model that can extract information from images and give the correct label. If you are familiar with deep learning, this is your chance to learn and implement deep learning model that is very good at dealing with unstructured data such as texts and images. Using “Where Were You” dataset, make a prediction model to classify the place captured from an image using collection of images inside the train folder. Submit your prediction for images located in the test folder. Make prediction to classify whether the image is about a Forest, a Mountain, or a Beach.
+CNN implementation for image classification for arbitrary images of beach, forest and mountain is possible with few lines of code. Keras provides a simple way to implement multiple types of CNN architectures and facilitates easy fine tunning of hyperparameters so that models can be easily optimized. Finally I used model improvement to predit the dataset, and the result better than simple model. The accuracy of the improvement model is significantly increase than the simple model after we adjust the architecture of the model, but it took longer time to train due to I used 100 epoch.This does not tells us whether the model specification is optimal, we can still try in obtaining a better model performance using other method or adjusting the network architecture. Many benefit we can take to use machine learning with convolutional neural networks, from this project case we can implement to classify photo collection in the website, users no longer needed to tag photos with labels like beach, forest, or mountain to categorize image content.
